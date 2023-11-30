@@ -14,3 +14,6 @@ Provided filters: area | utd
 ### /lookup/meantypes
 ### /lookup/timeseries
 Provided filters: station | component | timestep
+
+# Estimated time used producing case solution
+I used an estimated 4 hours to get the initial POC of the API working with persisting data to storage. An additional 2-3 hours was used to polishing the solution to improve on it.
