@@ -1,0 +1,23 @@
+services:
+  api:
+    container_name: case-aqi
+    build: .
+    restart: always
+    ports:
+      - "8080:8080"
+    networks:
+      - overlay
+  mongo:
+    container_name: aqi_db
+    image: mongo:latest
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - dbdata:/db
+    networks:
+      - overlay
+volumes:
+  dbdata:
+networks:
+  overlay:
